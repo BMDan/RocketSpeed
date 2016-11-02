@@ -207,7 +207,7 @@ TEST_F(ThreadLocalTest, ConcurrentReadWriteTest) {
     p.mu->Unlock();
   };
 
-  // Initiate 2 instnaces: one keeps writing and one keeps reading.
+  // Initiate 2 instances: one keeps writing and one keeps reading.
   // The read instance should not see data from the write instance.
   // Each thread local copy of the value are also different from each
   // other.
